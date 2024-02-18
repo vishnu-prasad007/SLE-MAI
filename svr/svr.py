@@ -21,7 +21,7 @@ def compute_statistical_features(sequence):
     std_deviation_values = np.std(sequence, axis=0)
     max_values = np.max(sequence, axis=0)
     min_values = np.min(sequence, axis=0)
-    range_values = np.ptp(sequence, axis=0) 
+    range_values = np.ptp(sequence, axis=0)  # Peak-to-peak (range) values
     # Concatenate computed statistical features into a single feature vector
     features = np.concatenate([mean_values, std_deviation_values, max_values, min_values, range_values])
     return features
@@ -46,10 +46,10 @@ def predict(features):
 
 def main():
     # Read data from file
-    data = utils.readFileContent('data/test/person6.json')
+    data = utils.read_file_content('data/test/person6.json')
 
     # Prepare data samples
-    data = utils.prepareDataSamples(data)
+    data = utils.prepare_data_samples(data)
 
     # Initialize an empty list to store samples
     samples = []
