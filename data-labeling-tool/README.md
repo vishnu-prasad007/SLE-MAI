@@ -29,4 +29,3 @@ This MATLAB application (`tool`) is designed to analyze data from foot-mounted I
 - Ensure that the CSV data file contains the necessary columns for acceleration data.
 - Make sure the video file is compatible and corresponds to the data timeline.
 - Follow on-screen instructions and hints for seamless navigation and interaction with the application.
-- For additional details on each button and functionality, refer to the comments within the MATLAB code.
